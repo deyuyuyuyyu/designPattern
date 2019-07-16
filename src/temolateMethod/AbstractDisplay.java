@@ -8,6 +8,8 @@ public abstract class AbstractDisplay {
 
 
 	//抽象メソッドを用いることで、流れだけを定義できた。
+	//final修飾子をつけることで、オーバーライドを禁止している
+	//これは、サブクラスにてメソッドの処理の流れが書き換えられることを禁止する役割を果たす。
 	public final void display(){
 
 		open();
